@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+
+body {
+    position: relative;
+    color: white;
+    background-color: rgb(247, 247, 247);
+}
+
+.triangle-top-left {
+    position: fixed;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 200px 800px 0 0;
+    border-color: rgba(0, 26, 161, 0.77) transparent transparent transparent;
+}
+
+.triangle-top-left2 {
+    position: fixed;
+    width: 0;
+    height: 0;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 600px 200px 0 0;
+    border-color: rgba(110, 194, 255, 0.77) transparent transparent transparent;
+}
+
+.triangle-bottom-right {
+    position: fixed;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 0 200px 800px;
+    border-color: transparent transparent rgba(0, 26, 161, 0.77) transparent;
+}
+
+.triangle-bottom-right2 {
+    position: fixed;
+    width: 0;
+    height: 0;
+    z-index: -2;
+    bottom: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 0 600px 200px;
+    border-color: transparent transparent rgba(110, 194, 255, 0.77) transparent;
+}
+
+.from-container{
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    background: #051DA3;
+    width: 360px;
+    padding: 40px 15px 10px;
+    border-radius: 20px;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+.control input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 0.1em 0;
+    margin-bottom: 10px;
+}
+
+.control input[type="submit"]{
+    width: 30%;
+    color: white;
+    background: #5066DC;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color .3s ease;
+}
+
+.control input[type="submit"]:hover{
+    background-color: #AAB7FF;
+}
+
+.link a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+
+.link a:hover{
+    color: #AAB7FF;
+}
+
+.img-logo{
+    position: absolute;
+    left: 105%;
+    z-index: -1;
+}
+
+.img-logo img {
+    width: 225px;
+    height: 285px;
+}
