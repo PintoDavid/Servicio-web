@@ -3,112 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>servicio</title>
+    <link rel="stylesheet" href="css/estilo-login.css">
+    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in - Centro de investigación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div  class="head">
-      <div class="logo">
-        <a href="#">logo</a> 
-      </div>
-      <nav class="navbar">
-          <a href="#">Inicio</a>
-          <a href="#">Nosotros</a>
-          <a href="#">Contactanos</a>
-          <a href="#">productos</a>
-          <a href="#">precio</a>
-      </nav>
+    <!-- ESTE ES EL INDEX REAL Y FINAL -->
+    <div class="triangle-top-left"></div>
+    <div class="triangle-top-left2"></div>
+    <div class="triangle-bottom-right"></div>
+    <div class="triangle-bottom-right2"></div>
+    <div class="content">
+        <section>
+            <div class="from-container">
+                <form action="#">
+                    <!-- PERMITE QUE AL ESTAR LA IMAGEN DENTRO DEL FORM
+                        FACILITE LA POSICION DEL MISMO Y TOME COMO CENTRO
+                        EL MISMO FORM
 
-        
-      </div>
-
-      <header class="content header">
-          <h2 class="title">Inicio</h2>
-          <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Enim quibusdam officia omnis aut, incidunt architecto 
-               optio distinctio explicabo sapiente id odio quisquam 
-               laudantium, exercitationem velit, aliquam laborum atque 
-               molestiae accusamus?
-          </p>
-          <div class="btn-home">
-              <a href="#" class="btn">saber mas</a>
-              <a href="#" class="btn">saber mas</a>
-
-          </div>
-
-      </header>
-      <section>
-          <h2 class="title">productos</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Enim quibusdam officia omnis aut, incidunt architecto 
-             optio distinctio explicabo sapiente id odio quisquam 
-             laudantium, exercitationem velit, aliquam laborum atque 
-             molestiae accusamus?
-        </p>
-
-        <div class="box-container">
-            <div class="box">
-                <i class="fab fa-angular"></i>
-                <h3>lorem</h3>
-                <p>exercitationem velit, aliquam laborum atque 
-                    molestiae accusamus?</p>
+                        TAMBIEN QUE SE MOVERA JUNTO CON EL FORM :)
+                    -->
+                    <div class="img-logo">
+                        <img src="img/logo-umng.png" title="Logo-umng-login" alt="Logo-umng-login">
+                    </div>
+                    <div class="control">
+                        <label for="email">Usuario o correo electrónico</label>
+                        <input type="text" name="email" id="email" placeholder="est.nombre.apellido@unimilitar.edu.co">
+                    </div>
+                    <div class="control">
+                        <label for="psw">Contraseña</label>
+                        <input type="password" name="psw" id="psw" placeholder="Contraseña">
+                    </div>
+                    <div class="link">
+                        <a href="IngresoAdmin.html">Entrar como administrador</a>
+                    </div>
+                    <div class="control">
+                        <input type="submit" value="Entrar">
+                    </div>
+                </form>
+                <div class="link">
+                    <a href="#">¿Buscas la contratación? Haz click aquí</a>
+                </div>
             </div>
-            <div class="box">
-                <i class="fab fa-apple"></i>
-                <h3>lorem</h3>
-                <p>exercitationem velit, aliquam laborum atque 
-                    molestiae accusamus?</p>
-            </div>
-            <div class="box">
-                <i class="fab fa-android"></i>
-                <h3>lorem</h3>
-                <p>exercitationem velit, aliquam laborum atque 
-                    molestiae accusamus?</p>
-            </div>
-        </div>
+        </section>
+    </div>
 
+<!--<div class="LoginBox">
 
-      </section>
-      <section class="content about">
-          <h2 class="tittle">Nosotros</h2>
-          <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Enim quibusdam officia omnis aut, incidunt architecto 
-            optio distinctio</p>
-            <a href="#" class="btn">saber mas</a>
+    <form action="FrontPageUsuario.html">
+        <label class="nombre-correo" for="iusuario">Usuario o correo</label>
+        <br>
+        <input class="input-correo" id="iusuario" type="text"placeholder="Correo Electronico">
+        <br>
+        <label class="nombre-contrasena" for="iContraseña">Contraseña</label>
+        <br>
+        <input class="input-contrasena" id="icontraseña" type="password"placeholder="Contraseña">
+        <br>
+        <input class="boton-entrar" type="submit" value="Entrar"/>
+        <br>
+        <a class="ingresar-admin" href="IngresoAdmin.html">ingresar como administrador</a>
+        <br>
+        <a class="boton-contratacion" href="#">buscas contratacion? haz click aqui</a>
+    </form>
 
+</div>-->
 
-
-      </section>
-      <section class="content price">
-
-        <article class="contain">
-            <h2 class="tittle">precio</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                 Ex maiores quam nesciunt ullam laborum numquam excepturi! 
-                 Nulla, animi! Cupiditate excepturi, officiis architecto 
-                 eos ad dolore sed eligendi. Tenetur, commodi earum.</p>
-
-                 <a href="#" class="btn">Saber precio</a>
-        </article>
-
-      </section>
-
-      <section>
-          <section class="content contac">
-            <h2 class="tittle">contacto</h2>
-            <p>63453323</p>
-            <figure class="map">
-                <img src="img/mapa.png" height="220'x" width="100%" alt="mapa"></figure>
-
-
-          </section>
-      </section>
-
-
-  
 </body>
 </html>
