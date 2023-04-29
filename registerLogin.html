@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="css/estilo-login.css">
+    <link rel="stylesheet" href="css/estilo-registro.css">
     <link rel="stylesheet" href="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in - Centro de investigación</title>
@@ -21,17 +21,27 @@
     <div class="content">
         <section>
             <div class="from-container">
-                <form action="" class="formulario" id="formulario">
-                    <!-- PERMITE QUE AL ESTAR LA IMAGEN DENTRO DEL FORM
-                        FACILITE LA POSICION DEL MISMO Y TOME COMO CENTRO
-                        EL MISMO FORM
-
-                        TAMBIEN QUE SE MOVERA JUNTO CON EL FORM :)
+                <form action="#">
+                    <!-- SOLO NECESITAMOS POCOS DATOS:
+                        - CORREO
+                        - CONTRASEÑA
+                        - NONBRE
+                        - APELLIDO
+                        - CODIGO
                     -->
-                    <div class="img-logo">
-                        <img src="img/logo-umng.png" title="Logo-umng-login" alt="Logo-umng-login">
-                    </div>
-                    <div class="login">
+                    <div class="register">
+                        <div class="control">
+                            <label for="email">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Pepito">
+                        </div>
+                        <div class="control">
+                            <label for="psw">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" placeholder="Pérez">
+                        </div>
+                        <div class="control">
+                            <label for="email">Código</label>
+                            <input type="text" name="codigo" id="codigo" placeholder="Pepito">
+                        </div>
                         <div class="control">
                             <label for="email">Correo electrónico</label>
                             <input type="text" name="email" id="email" placeholder="est.nombre.apellido@unimilitar.edu.co">
@@ -40,24 +50,16 @@
                             <label for="psw">Contraseña</label>
                             <input type="password" name="psw" id="psw" placeholder="Contraseña">
                         </div>
-                        <div class="control">
-                            <label for="error" class="errorNoText" id="mensajeError">Por favor, completa los anteriores campos para continuar.</label>
-                        </div>
                     </div>
                     <div class="link">
-                        <a href="registerLogin.html">¿No tiene cuenta? Haz <u>click aquí</u></a>
+                        <a href="index.html">¿Ya tiene cuenta? Inicia sesión <u>aquí</u></a>
                     </div>
                     <div class="control">
-                        <input type="submit" id="boton-entrar" value="Entrar">
+                        <input type="submit" value="Registrarse">
                     </div>
                 </form>
-                <div class="link">
-                    <a class="entra_como_admin" href="#">Entrar como administrador</a>
-                </div>
             </div>
         </section>
     </div>
-<!-- EL SCRIPT SE AGREGA ANTES DE CERRAR EL BODY PARA QUE LEA TODO LO ANTERIOR, DE LO CONTRARIO NO VA A CARGARLO CORRECTAMENTE-->
-<script src="js/login.js"></script>
 </body>
 </html>

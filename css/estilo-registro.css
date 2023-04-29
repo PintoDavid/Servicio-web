@@ -48,8 +48,14 @@
     border-color: transparent transparent rgba(110, 194, 255, 0.77) transparent;
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    transform: translate(0,25%);
+}
+
 .from-container{
-    transform: translate(100%,50%);
+    /*transform: translate(150%,25%);*/
     background: #051DA3;
     width: 360px;
     padding: 40px 15px 10px;
@@ -57,7 +63,7 @@
     z-index: 1;
 }
 
-.login {
+.register {
     margin: 10px auto 0 auto;
 }
 
@@ -70,22 +76,12 @@
     margin: 5px auto 10px auto;
 }
 
-.control label.errorNoText {
-    color: red;
-    font-weight: bold;
-    display: none;
-}
-
-input[type="text"], input[type="password"], textarea {
-    color: black;
-}
-
 .control input[type="submit"]{
-    width: 30%;
+    width: 40%;
     background: #5066DC;
     font-size: 1.2em;
     font-weight: bold;
-    margin: 10px auto 124px auto;
+    margin: 20px auto 20px auto;
     transition: background-color .3s ease;
 }
 
@@ -98,6 +94,7 @@ input[type="text"], input[type="password"], textarea {
 }
 
 .link a{
+    /*color: white;*/
     text-decoration: none;
     transition: color .3s ease;
 }
@@ -108,11 +105,4 @@ input[type="text"], input[type="password"], textarea {
 
 a.entra_como_admin {
     font-size: larger;
-}
-
-.img-logo img {
-    position: absolute;
-    z-index: -1;
-    height: 225px;
-    margin: 0 auto 0 450px;
 }
