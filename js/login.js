@@ -127,11 +127,15 @@ formulario.addEventListener('submit', (e) => {
   });
 
   if (vacio) {
+    //Limpiamos la consola
+    console.clear();
     // Si hay algún input vacío, mostramos el mensaje de error
     mensajeError.style.display = 'block';
-    mensajeError.textContent = 'Por favor, completa todos los campos para continuar.';
+    mensajeError.textContent = 'Please, complete all the lefts inputs.';
     console.error(mensajeError.textContent);
   } else {
+    //Limpiamos la consola
+    console.clear();
     // Si no, creamos un objeto con los datos del formulario
     const formData = {
       //Obtiene los datos de los inputs
@@ -142,7 +146,8 @@ formulario.addEventListener('submit', (e) => {
     console.log(JSON.stringify(formData));
     // Limpiamos el mensaje de error
     mensajeError.style.display = 'none';
-    mensajeError.textContent = '';
+    mensajeError.textContent = 'Data sent correctly.';
+    console.log(mensajeError.textContent);
     // Reiniciamos el formulario
     formulario.reset();
     // Aquí podríamos hacer la llamada a Ajax para enviar los datos a un servidor
