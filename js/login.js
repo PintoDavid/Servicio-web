@@ -134,11 +134,12 @@ formulario.addEventListener('submit', (e) => {
   } else {
     // Si no, creamos un objeto con los datos del formulario
     const formData = {
+      //Obtiene los datos de los inputs
       email: document.getElementById('email').value,
       password: document.getElementById('psw').value
     };
-    // Imprimimos los datos del formulario en la consola
-    console.log(formData);
+    // Imprimimos los datos del formulario en la consola por JSON
+    console.log(JSON.stringify(formData));
     // Limpiamos el mensaje de error
     mensajeError.style.display = 'none';
     mensajeError.textContent = '';
