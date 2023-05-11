@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--  OBTENER DATOS POR PHP  -->
+    
     <!-- ESTE ES EL INDEX REAL Y FINAL -->
     <div class="triangle-top-left"></div>
     <div class="triangle-top-left2"></div>
@@ -21,7 +23,8 @@
     <div class="content">
         <section>
             <div class="from-container">
-                <form action="" class="formulario" id="formulario">
+                <!-- ESTA PARTE PERMITE LEER LOS DATOS POR PHP Y MANDARLOS A LA BASE DE DATOS POR MYSQL -->
+                <from id="user" action="data.php" class="formulario" id="formulario" method="POST">
                     <!-- PERMITE QUE AL ESTAR LA IMAGEN DENTRO DEL FORM
                         FACILITE LA POSICION DEL MISMO Y TOME COMO CENTRO
                         EL MISMO FORM
