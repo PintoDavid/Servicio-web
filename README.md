@@ -1,0 +1,1 @@
+Proyecto final (incompleto :c) para la materia tecnologías de internet 2023-1 sobre un servicio web basado en un sistema de autentificacion de alumado y profesor para revisar peticiones para entrar en un grupo de laboratorio asignado.
